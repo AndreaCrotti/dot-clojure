@@ -181,6 +181,11 @@
   :new {:extra-deps {seancorfield/clj-new {:mvn/version "RELEASE"}}
         :main-opts ["-m" "clj-new.create"]}
 
+  :carve {:extra-deps {borkdude/carve {:git/url "https://github.com/borkdude/carve"
+                                       :sha "fb8c1278ece4dbb220bc51cd5d46a8a0f762e83f"}}
+          :main-opts ["-m" "carve.main"]}
+
+
   ;; uberjar building:
   ;; - see https://github.com/seancorfield/depstar for a minimalist approach:
   ;;   - clj -A:uberjar result.jar
